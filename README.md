@@ -1,28 +1,32 @@
 # Unveil.js for Rails
 
-This gem will help you get started with [unveil.js][unveil-github] rather quickly.
+Lazy loaded images on rails. If you want a quick start using
+[unveil.js][unveil-github] with rails there is now a gem for that.
+
+By loading your images as they appear in the viewport rather than on load you
+can improve your rails application's page speed.
 
 ## Installation
 
-Add the gem:
+Add the unveil-rails gem into your `Gemfile`:
 
 ``` ruby
 gem 'unveil-rails', '~> 0.1.0'
 ```
 
-Install the assets:
+Install unveil.js and initializer into your rails app:
 
 ```
 bin/rails g unveil:rails:install
 ```
 
-Include the asset in your JS:
+Include the unveil.js initializer in `app/assets/javascripts/application.js`:
 
 ``` js
 //= require unveil_init
 ```
 
-Now use the helper method whereever you want lazy images:
+Now use the helper method where ever you want lazy images:
 
 ```erb
 <%= lazy_image_tag('an-image.png') %>
