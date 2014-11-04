@@ -1,5 +1,5 @@
 class ContextMock
-  include Unveil::Rails::ViewHelpers
+  include Unveil::Rails::ViewHelper
 
   def image_path(path)
     "/#{path}"

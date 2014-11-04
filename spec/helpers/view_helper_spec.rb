@@ -1,7 +1,7 @@
-require 'unveil/rails/view_helpers'
+require 'unveil/rails/view_helper'
 require_relative '../mocks/context_mock'
 
-describe Unveil::Rails::ViewHelpers do
+describe Unveil::Rails::ViewHelper do
   let(:helper) { ContextMock.new }
 
   before do
