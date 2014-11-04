@@ -1,0 +1,4 @@
+//= require jquery.unveil.js
+$(document).ready(function() {
+  $('img').unveil(<%= Unveil::Rails.config.threshold %>);
+});
