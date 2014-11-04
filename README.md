@@ -1,6 +1,6 @@
 # Unveil.js for Rails
 
-This gem will help you get started with unveil.js rather quickly.
+This gem will help you get started with [unveil.js][unveil-github] rather quickly.
 
 ## Installation
 
@@ -66,6 +66,8 @@ Developed and maintained by [Made Tech][made]. Key contributions:
 
  * [Luke Morton](https://github.com/DrPheltRight)
 
+And of course [Luís Almeida][luis-github] creator of [unveil.js][unveil-github].
+
 ## License
 
 Copyright © 2014 Made Tech Ltd. It is free software, and may be
@@ -75,3 +77,4 @@ redistributed under the terms specified in the [LICENSE][license] file.
 [license]: https://github.com/madebymade/cf-deploy/blob/master/LICENSE
 [unveil-github]: https://github.com/luis-almeida/unveil
 [unveil-docs]: http://luis-almeida.github.io/unveil/
+[luis-github]: https://github.com/luis-almeida
