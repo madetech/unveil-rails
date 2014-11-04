@@ -1,4 +1,4 @@
-require 'unveil/rails/view_helpers'
+require 'unveil/rails/view_helper'
 
 module Unveil
   class Rails
