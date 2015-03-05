@@ -18,9 +18,9 @@ describe Unveil::Rails::ViewHelper do
 
       let(:expected_html) do
         <<-HTML
-<img src="/blank.gif" data-src="/my-image.png" />
+<img src="/blank.gif" alt="my-image.png" data-src="/my-image.png" />
 <noscript>
-<img src="/my-image.png" />
+<img src="/my-image.png" alt="my-image.png" />
 </noscript>
         HTML
       end
@@ -33,9 +33,9 @@ describe Unveil::Rails::ViewHelper do
 
       let(:expected_html) do
         <<-HTML
-<img src="/place.gif" data-src="/my-image.png" />
+<img src="/place.gif" alt="my-image.png" data-src="/my-image.png" />
 <noscript>
-<img src="/my-image.png" />
+<img src="/my-image.png" alt="my-image.png" />
 </noscript>
         HTML
       end
@@ -48,9 +48,24 @@ describe Unveil::Rails::ViewHelper do
 
       let(:expected_html) do
         <<-HTML
-<img src="/blank.gif" data-src="/my-image.png" data-src-retina="/my-retina-image.png" />
+<img src="/blank.gif" alt="my-image.png" data-src="/my-image.png" data-src-retina="/my-retina-image.png" />
 <noscript>
-<img src="/my-image.png" />
+<img src="/my-image.png" alt="my-image.png" />
+</noscript>
+        HTML
+      end
+
+      it { is_expected.to eq(expected_html.strip) }
+    end
+
+    context 'when alt text provided' do
+      let(:options) { { alt: 'Alt text' } }
+
+      let(:expected_html) do
+        <<-HTML
+<img src="/blank.gif" alt="Alt text" data-src="/my-image.png" />
+<noscript>
+<img src="/my-image.png" alt="Alt text" />
 </noscript>
         HTML
       end
