@@ -15,8 +15,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = ['spec']
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'railties', '~> 4.1.0'
+  spec.add_dependency 'railties', '> 4.1.0'
 
-  spec.add_development_dependency 'rspec', '~> 3.1.0'
-  spec.add_development_dependency 'rspec-rails', '~> 3.1.0'
+  spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'rspec-rails'
 end
