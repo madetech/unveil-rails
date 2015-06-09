@@ -11,7 +11,7 @@ can improve your rails application's page speed.
 Add the unveil-rails gem into your `Gemfile`:
 
 ``` ruby
-gem 'unveil-rails', '~> 0.1.0'
+gem 'unveil-rails', '~> 0.2.1'
 ```
 
 Install unveil.js and initializer into your rails app:
