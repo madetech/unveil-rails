@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/madebymade/unveil-rails'
   spec.license       = 'MIT'
 
-  spec.files         = Dir['{lib,spec}/**/*.rb'] + ['LICENSE', 'README.md']
+  spec.files         = Dir['{lib,spec}/**/*'] + ['LICENSE', 'README.md']
   spec.test_files    = ['spec']
   spec.require_paths = ['lib']
 
