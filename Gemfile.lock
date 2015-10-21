@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    unveil-rails (0.2.0)
+    unveil-rails (0.2.1)
       railties (> 4.1.0)
 
 GEM
